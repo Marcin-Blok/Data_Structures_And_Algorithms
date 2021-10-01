@@ -20,7 +20,7 @@ public class LinkedList<I extends Number> {
     public void addLast(int item) {
         // Wrapping this value, this int item inside node object
         Node node = new Node(item);
-        // Calling my private method see code below (to make code more readeable)
+        // Calling my private method to make code more readable (see code below).
         if (isEmpty()) {
             head = tail = node;
         } else {
