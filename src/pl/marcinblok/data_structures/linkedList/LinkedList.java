@@ -1,4 +1,4 @@
-package pl.marcinblok.linkedList;
+package pl.marcinblok.data_structures.linkedList;
 
 import java.util.NoSuchElementException;
 

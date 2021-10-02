@@ -1,4 +1,4 @@
-package pl.marcinblok.array;
+package pl.marcinblok.data_structures.array;
 
 public class ArrayExample {
 
@@ -39,7 +39,7 @@ public class ArrayExample {
             throw new IllegalArgumentException();
         } else {
             // Shift the items to the left to fill the hole
-            for (int i = index; i < count-1; i++) {
+            for (int i = index; i < count; i++) {
                 array[i] = array[i + 1];
             }
             count--;
