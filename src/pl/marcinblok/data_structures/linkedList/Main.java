@@ -1,4 +1,4 @@
-package pl.marcinblok.linkedList;
+package pl.marcinblok.data_structures.linkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,5 +12,6 @@ public class Main {
         list.deleteFirst();
         list.deleteLast();
         System.out.println(list.contains(40));
+
     }
 }

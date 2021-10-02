@@ -1,4 +1,4 @@
-package pl.marcinblok.array;
+package pl.marcinblok.data_structures.array;
 
 public class Main {
     public static void main(String[] args) {
