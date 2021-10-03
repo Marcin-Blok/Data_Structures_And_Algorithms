@@ -1,6 +1,7 @@
 package pl.marcinblok.algorythms;
 public class MaxContiguousSubarraySum {
 
+    // Time complexity O(n)
     static int max_contiguous_subarray_sum(int[] array){
         int max_sum = array[0];
         int current_value = max_sum;

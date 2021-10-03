@@ -2,6 +2,7 @@ package pl.marcinblok.algorythms;
 
 public class BinarySearch {
 
+    // Time complexity O(log N)
     static int findIndexWithBinarySearch(int[] array, int target) {
         int left = array[0];
         int right = array.length - 1;
