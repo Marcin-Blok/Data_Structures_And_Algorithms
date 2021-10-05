@@ -1,4 +1,4 @@
-package pl.marcinblok.algorythms;
+package pl.marcinblok.algorithms;
 public class MaxContiguousSubarraySum {
 
     // Time complexity O(n)
