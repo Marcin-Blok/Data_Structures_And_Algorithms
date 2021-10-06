@@ -10,7 +10,6 @@ public class Main {
         arrayExample.insert(40);
         arrayExample.insert(50);
         arrayExample.insert(60);
-        arrayExample.insert(70);
         arrayExample.removeAt(3);
         System.out.println(arrayExample.getCount());
         arrayExample.print();
