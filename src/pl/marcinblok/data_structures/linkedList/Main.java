@@ -1,5 +1,7 @@
 package pl.marcinblok.data_structures.linkedList;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -12,6 +14,7 @@ public class Main {
         list.deleteFirst();
         list.deleteLast();
         System.out.println(list.contains(40));
+        System.out.println(Arrays.toString(list.toArray()));
 
     }
 }
