@@ -15,6 +15,7 @@ public class LinkedList<I extends Number> {
 
     private Node head;
     private Node tail;
+    private int size;
 
     // addLast
     public void addLast(int item) {
@@ -28,7 +29,7 @@ public class LinkedList<I extends Number> {
             tail.next = node;
             tail = node;
         }
-
+        size++;
     }
 
     // addFirst
@@ -40,6 +41,7 @@ public class LinkedList<I extends Number> {
             node.next = head;
             head = node;
         }
+        size++;
     }
 
     private boolean isEmpty() {
@@ -53,11 +55,12 @@ public class LinkedList<I extends Number> {
         }
         if (head == tail) {
             head = tail = null;
-            return;
+        } else {
+            Node second = head.next;
+            head.next = null;
+            head = second;
         }
-        Node second = head.next;
-        head.next = null;
-        head = second;
+        size--;
     }
 
     // deleteLast
@@ -68,11 +71,12 @@ public class LinkedList<I extends Number> {
         }
         if (head == tail) {
             head = tail = null;
-            return;
+        } else {
+            Node previous = getPrevious(tail);
+            tail = previous;
+            tail.next = null;
         }
-        Node previous = getPrevious(tail);
-        tail = previous;
-        tail.next = null;
+        size--;
     }
 
     private Node getPrevious(Node node) {
@@ -105,6 +109,21 @@ public class LinkedList<I extends Number> {
             }
         }
         return -1;
+    }
+
+    public int size() {
+        return size;
+    }
+
+    public int[] toArray(){
+        int[] array = new int[size];
+        Node current = head;
+        int index = 0;
+        while (current != null){
+            array[index++] = current.value;
+            current = current.next;
+        }
+        return array;
     }
 
 
